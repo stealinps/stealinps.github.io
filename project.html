@@ -3,9 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projects - stealinp</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .back-btn {
+            height: 50px;
+            width: 100px;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .back-btn a {
+            color: teal;
+            text-decoration: none;
+        }
+
+        .projects-container {
+            padding-top: 50px;
+            padding-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .projects-container h1 {
+            color: black;
+            -webkit-text-stroke: 2px teal;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .project-card {
+            background-color: darkblue;
+            opacity: 0.9;
+            border: 2px solid teal;
+            border-radius: 10px;
+            padding: 20px 30px;
+            width: 60%;
+            max-width: 600px;
+        }
+
+        .project-card h2 {
+            color: teal;
+            margin: 0 0 8px 0;
+        }
+
+        .project-card p {
+            color: white;
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+
+        .project-card a {
+            color: teal;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
-    <center><h1> Collection of my projects </h1></center>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="Pictures/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="projects-container">
+        <h1>Collection of my projects</h1>
+
+        <button class="back-btn">
+            <a href="index.html">← Back</a>
+        </button>
+
+        <div class="project-card">
+            <h2>AssignmentDSA</h2>
+            <p>Team project video game using RayLib</p>
+            <a href="https://github.com/stealinps/AssignmentDSA2026" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Portfolio Website</h2>
+            <p>This website</p>
+            <a href="https://github.com/stealinps/stealinps.github.io" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Fun Projects</h2>
+            <p>Collection of my projects that I did for fun during the semester</p>
+            <a href="https://github.com/stealinps/fun-projects" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+            <h2>DSA note</h2>
+            <p>The note of the entirety of DSA</p>
+            <a href="https://github.com/stealinps/notes" target="_blank">View on GitHub →</a>
+        </div>
+    </div>
+
 </body>
 </html>
