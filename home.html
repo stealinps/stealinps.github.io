@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>stealinp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="Pictures/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header id="headerstuff">
+        <img src="Pictures/pfp.jpg" id="pfp" alt="pfp">
+        <h1>Syazwan</h1>
+        <h3>About me:</h3>
+        <p style="padding-top:5px;color:teal">
+            My name is Syazwan also goes by Stealinp.<br>
+            I am a Computer Engineering Student with a 3.96CGPA.<br>
+            Located in Malaysia.<br>
+            My main interest is in Embedded Security.<br>
+            This is my personal portfolio website.<br>
+        </p>
+    </header>
+    <button id="toggle-btn" onclick="toggleHeader()">☰</button>
+
+    
+    <center style="padding-top: 50px; padding-bottom: 20px;">
+        
+        <button class="buttons">
+            <a href="https://github.com/stealinps" onclick="return window.confirm(`Create new tab?`)" style="color:teal" target="_blank" title="To my Github">
+                <img src="Pictures/github.png" alt="" style="height:10px;width:10px;">
+                Github
+            </a>
+            
+        </button>
+        <br>
+        <button class="buttons">
+            <a href="https://www.linkedin.com/in/stealinp/" onclick="return window.confirm(`Create new tab?`)" style="color:teal" target="_blank" title="To my LinkedIn">
+                <img src="Pictures/linkedin.png" alt="" style="height:10px;width:10px;">
+                LinkedIn
+            </a>
+            
+        </button>
+        
+    </center>
+
+
+    <div class="projects-container">
+        <h1>Collection of my projects</h1>
+        
+        <div id="filter-bar">
+            <span>Skills:</span>
+            <button class="filter-btn" data-tag="C++">C++</button>
+            <button class="filter-btn" data-tag="RayLib">RayLib</button>
+            <button class="filter-btn" data-tag="HTML CSS">HTML and CSS</button>
+            <button class="filter-btn" data-tag="JavaScript">JavaScript</button>
+            <button class="filter-btn" data-tag="Arduino">Arduino</button>
+            <button class="filter-btn" data-tag="ESP32">ESP32</button>
+            <button class="filter-btn" data-tag="FreeCAD">FreeCAD</button>
+        </div>
+
+        <div class="project-card" data-tags="C++,RayLib">
+            <h2>AssignmentDSA</h2>
+            <div class="tags">
+                <span class="tag">C++</span>
+                <span class="tag">RayLib</span>
+            </div>
+            <p>Team project video game using RayLib</p>
+            <a href="https://github.com/stealinps/AssignmentDSA2026" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card" data-tags="HTML CSS,JavaScript">
+            <h2>Portfolio Website</h2>
+            <div class="tags">
+                <span class="tag">HTML and CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <p>This website</p>
+            <a href="https://github.com/stealinps/stealinps.github.io" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card" data-tags="C++">
+            <h2>Fun Projects</h2>
+            <div class="tags">
+                <span class="tag">C++</span>
+            </div>
+            <p>Collection of my projects that I did for fun during the semester</p>
+            <a href="https://github.com/stealinps/fun-projects" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card" data-tags="C++">
+            <h2>DSA note</h2>
+            <div class="tags">
+                <span class="tag">C++</span>
+            </div>
+            <p>The note of the entirety of DSA</p>
+            <a href="https://github.com/stealinps/notes" target="_blank">View on GitHub →</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
