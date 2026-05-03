@@ -39,14 +39,12 @@ body {
         #headerstuff h1 {
             font-size: clamp(30px, 2vw, 50px);
             text-align: center;
-            color: black;
-            -webkit-text-stroke: 2px teal;
+            color: white;
         }
         #headerstuff h3 {
             font-size: clamp(20px, 2vw, 30px);
             text-align: center;
-            color: rgb(0, 0, 0);
-            -webkit-text-stroke: 1px teal;
+            color: rgb(255, 255, 255);
         }
         #toggle-btn {
             position: fixed;
@@ -76,6 +74,74 @@ body {
         }
         .buttons a {
             text-decoration: none;
+        }
+        .readme-btn {
+            margin-top: 8px;
+            background: transparent;
+            color: teal;
+            border: 1px solid teal;
+            border-radius: 3px;
+            padding: 3px 10px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .readme-btn:hover {
+            background: teal;
+            color: white;
+        }
+        .readme-content h1,
+        .readme-content h2,
+        .readme-content h3 {
+            color: teal;
+            margin: 8px 0 4px 0;
+        }
+
+        .readme-content p {
+            color: white;
+            margin: 4px 0;
+        }
+
+        .readme-content a {
+            color: teal;
+        }
+
+        .readme-content code {
+            background-color: rgba(0, 128, 128, 0.2);
+            color: teal;
+            padding: 1px 5px;
+            border-radius: 3px;
+            font-size: 0.85em;
+        }
+
+        .readme-content pre {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .readme-content ul, 
+        .readme-content ol {
+            color: white;
+            padding-left: 20px;
+        }
+
+        .readme-content img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .readme-content {
+            margin-top: 12px;
+            color: white;
+            font-size: 0.85rem;
+            border-top: 1px solid teal;
+            padding-top: 10px;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
         }
         #footing{
             position:fixed;
@@ -110,7 +176,6 @@ body {
 
         .projects-container h1 {
             color: black;
-            -webkit-text-stroke: 2px teal;
             font-size: 30px;
             margin-bottom: 10px;
         }

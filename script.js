@@ -35,3 +35,37 @@ function toggleHeader() {
     header.classList.toggle("hidden");
     btn.classList.toggle("shifted");
 }
+
+document.querySelectorAll(".readme-btn").forEach(btn => {
+    btn.addEventListener("click", async () => {
+        const repo = btn.dataset.repo;
+        const contentDiv = btn.nextElementSibling;
+        const isVisible = contentDiv.style.display === "block";
+
+        if (isVisible) {
+            contentDiv.style.display = "none";
+            btn.textContent = "View More ▾";
+            return;
+        }
+
+        btn.textContent = "Loading...";
+        contentDiv.style.display = "block";
+
+        if (contentDiv.dataset.loaded) {
+            btn.textContent = "View Less ▴";
+            return;
+        }
+
+        try {
+            const res = await fetch(`https://api.github.com/repos/${repo}/readme`);
+            const data = await res.json();
+            const decoded = atob(data.content);
+            contentDiv.innerHTML = marked.parse(decoded);  // ← changed
+            contentDiv.dataset.loaded = "true";
+            btn.textContent = "View Less ▴";
+        } catch (err) {
+            contentDiv.textContent = "Failed to load README.";
+            btn.textContent = "View More ▾";
+        }
+    });
+});
