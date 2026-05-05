@@ -18,19 +18,13 @@
         <img src="Pictures/pfp.jpg" id="pfp" alt="pfp">
         <h1>Syazwan</h1>
         <h3>About me:</h3>
-        <p style="padding-top:5px;color:teal;padding-left:15px">
+        <p style="padding-top:5px;color:teal;padding-left:15px;padding-right:15px">
             My name is Syazwan also goes by Stealinp.<br>
             I am a Computer Engineering Student with a 3.96CGPA.<br>
             Located in Malaysia.<br>
             My main interest is in Embedded Security.<br>
             This is my personal portfolio website.<br>
         </p>
-    </header>
-    <button id="toggle-btn" onclick="toggleHeader()">☰</button>
-
-    
-    <center style="padding-top: 50px; padding-bottom: 20px;">
-        
         <button class="buttons">
             <a href="https://github.com/stealinps" onclick="return window.confirm(`Create new tab?`)" style="color:teal" target="_blank" title="To my Github">
                 <img src="Pictures/github.png" alt="" style="height:10px;width:10px;">
@@ -46,12 +40,17 @@
             </a>
             
         </button>
+    </header>
+    <button id="toggle-btn" onclick="toggleHeader()">☰</button>
+
+    
+    <center style="padding-top: 50px; padding-bottom: 20px;">
         
     </center>
 
 
     <div class="projects-container">
-        <h1>Collection of my projects</h1>
+        <h1 style="color:rgb(255, 255, 255);border-radius:5px;">Collection of my projects</h1>
         
         <div id="filter-bar">
             <span>Skills:</span>
@@ -62,6 +61,8 @@
             <button class="filter-btn" data-tag="Arduino">Arduino</button>
             <button class="filter-btn" data-tag="ESP32">ESP32</button>
             <button class="filter-btn" data-tag="FreeCAD">FreeCAD</button>
+            <button class="filter-btn" data-tag="Python">Python</button>
+            <button class="filter-btn" data-tag="Solder">Solder</button>
         </div>
 
         <div class="project-card" data-tags="C++,RayLib">
@@ -109,6 +110,7 @@
             <button class="readme-btn" data-repo="stealinps/notes">View More ▾</button>
             <div class="readme-content" style="display:none;"></div>
         </div>
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="script.js"></script>
