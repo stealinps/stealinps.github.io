@@ -141,7 +141,7 @@
             border-top: 1px solid teal;
             padding-top: 10px;
             white-space: pre-wrap;
-            max-height: 300px;
+            max-height: 500px;
             overflow-y: auto;
         }
         #footing{
