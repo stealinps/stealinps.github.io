@@ -1,6 +1,11 @@
 
 const slides = [
     {
+        src: "DSA/pie.png",          
+        title: "My learning preference",
+        desc: "My learning preference reflects my contributions in the padlet. As a kinesthetics learner I learn best from creating my own programs. Although I do share my notes, I quickly felt that sharing notes will not be effective like adding sands to the beach as everyone is already doing their own notes.My motto is \"to be good at something do it\"."
+    },
+    {
         src: "DSA/1.png",          
         title: "My first contributions Intro to DSA",
         desc: "This is the first contribution I ever made for my padlet. It consist of me sharing my Notes Github repository from my DSA class. All created using Neovim which I am proud of.?"
@@ -36,9 +41,19 @@ const slides = [
         desc: "This is a special one. This program is a program that uses the Bogo Sort Algorithm. If you dont know, Bogo Sort bogo sort is a sorting algorithm that randomise the array/list until it is sorted. As you can see it took me 900k steps just to sort a list of 10 elements. It's logic is simple, yet also quite challenging when you want to do the sorting close to truly random."
     },
     {
+        src: "DSA/engangement.png",          
+        title: "Taking inspiration from my peers",
+        desc: "From time to time I explore the contributions of others in the padlet looking for inspiration. One of them is Sufiyan Abdul's number guessing game. Which to me hold very interesting concept and unexplored potentials."
+    },
+    {
         src: "DSA/8.png",
         title: "My eigth contribution Searching Algorithm",
-        desc: "This is my favourite contribution for DSA class as you can see from the length of the description. Nothing to say because everything is in there. This is the most fun program I ever did."
+        desc: "From the inspiration I get, I created this program. Which become my favourite contribution for DSA class as you can see from the length of the description. Nothing to say because everything is in there. This is the most fun program I ever did."
+    },
+    {
+        src: "DSA/engagement2.png",
+        title: "Others also engange with my posts",
+        desc: "Creating a funny yet also educational posts allows other to engage with my contributions easily."
     },
     {
         src: "DSA/9.png",
@@ -49,6 +64,16 @@ const slides = [
         src: "DSA/10.png",
         title: "My tenth contribution Tree",
         desc: "From the tree implementation in our class I expanded it to have the functionality in the description. The reason I made this is just for my satisfaction."
+    },
+    {
+        src: "DSA/BeforeAndNow.png",
+        title: "Comparison between me before DSA and after DSA",
+        desc: "I have grown a lot in the past 14 weeks. Both directly and indirectly. From learning about OOP and ADTs. To becoming more patience when programming. DSA as a whole really contributed to the development of my life. I m totally grateful toward Dr Fajar for allowing me to be a part of this wonderful class."
+    },
+    {
+        src: "DSA/tui.png",          
+        title: "I am also a Terminal User Interface(TUI) and Open Source enthusiast",
+        desc: "As a TUI and FOSS person, I used tools like Neovim, Git and the terminal throughout the entire semester. Eventhough it is challenging at first, building the muscle memory in using these tools will greatly benefit me in the future especially as a computer engineering student. Because of these some people might notice that I tend to avoid using grandier software especially proprietary one"
     },
 ];
 
