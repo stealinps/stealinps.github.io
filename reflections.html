@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>stealinp – Reflections</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="Pictures/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Reuse toggle sidebar from main site -->
+    <header id="headerstuff">
+        <img src="Pictures/pfp.jpg" id="pfp" alt="pfp">
+        <h1>Syazwan</h1>
+        <h3>About me:</h3>
+        <p style="padding-top:5px;color:#67F0F0;padding-left:15px;padding-right:5px">
+            My name is Syazwan also goes by Stealinp.<br>
+            I am a Computer Engineering Student with a 3.96CGPA.<br>
+            Located in Malaysia.<br>
+            My main interest is in Embedded Security.<br>
+            This is my personal portfolio website.<br>
+        </p>
+        <div id="social-box">
+                    <p style="color:teal;font-weight:bold;margin:0 0 10px 0;font-size:0.85rem;letter-spacing:1px;">FIND ME ON</p>
+                    <a href="https://github.com/stealinps" target="_blank" onclick="return window.confirm('Create new tab?')" class="social-link">
+                        <img src="Pictures/github.png" alt="" style="height:13px;width:13px;"> Github
+                    </a>
+                    <a href="https://www.linkedin.com/in/stealinp/" target="_blank" onclick="return window.confirm('Create new tab?')" class="social-link">
+                        <img src="Pictures/linkedin.png" alt="" style="height:13px;width:13px;"> LinkedIn
+                    </a>
+                    <a href="https://www.youtube.com/@stealnight-1" target="_blank" onclick="return window.confirm('Create new tab?')" class="social-link">
+                        ▶ YouTube
+                    </a>
+                </div>
+    </header>
+    <button id="toggle-btn" onclick="toggleHeader()">☰</button>
+
+    <div id="reflections-page">
+
+        <h1 id="page-title">Reflections</h1>
+
+        <div id="reflections-layout">
+
+            <button id="arrow-left" class="carousel-arrow" onclick="prevSlide()">&#10216;</button>
+
+            <div id="carousel-wrapper">
+                <div id="carousel-track">
+
+                </div>
+
+                <div id="dot-bar"></div>
+            </div>
+
+            <button id="arrow-right" class="carousel-arrow" onclick="nextSlide()">&#10217;</button>
+
+            <div id="desc-panel">
+                <div id="desc-box">
+                    <p id="desc-title" style="color:#67F0F0;font-weight:bold;margin:0 0 8px 0;font-size:1rem;"></p>
+                    <p id="desc-text" style="color:white;font-size:0.85rem;line-height:1.6;margin:0;"></p>
+                </div>
+
+                
+            </div>
+
+        </div>
+
+        <div style="margin-top:24px;">
+            <button class="back-btn"><a href="index.html">← Back</a></button>
+        </div>
+
+    </div>
+
+    <script src="reflections.js"></script>
+    <script>
+        function toggleHeader() {
+            const header = document.getElementById("headerstuff");
+            const btn = document.getElementById("toggle-btn");
+            header.classList.toggle("hidden");
+            btn.classList.toggle("shifted");
+        }
+        toggleHeader();
+    </script>
+</body>
+</html>

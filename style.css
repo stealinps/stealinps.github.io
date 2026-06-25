@@ -67,11 +67,14 @@
         }
 
         .buttons{
-            height: 25px;
-            width: 100px;
+            height: 50px;
+            width: 240px;
             border-radius:5px;
-            font-size:14px;
-            background-color:darkblue;
+            font-size:28px;
+            background-color:transparent;
+            border: transparent;
+            text-decoration: underline;
+            text-decoration-color: #67F0F0;
         }
         .buttons a {
             text-decoration: none;
@@ -272,3 +275,187 @@
             height:2px;
             border: 1px rgb(3, 215, 215);
         }
+
+#reflections-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 60px 20px 40px 20px;
+    box-sizing: border-box;
+}
+
+#page-title {
+    color: white;
+    font-size: clamp(24px, 3vw, 40px);
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid teal;
+    padding-bottom: 8px;
+}
+
+/* ── Main row layout ─────────────────────────────────── */
+#reflections-layout {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* ── Arrows ──────────────────────────────────────────── */
+.carousel-arrow {
+    background: transparent;
+    color: teal;
+    border: 2px solid teal;
+    border-radius: 5px;
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1;
+}
+
+.carousel-arrow:hover {
+    background: teal;
+    color: white;
+}
+
+/* ── Carousel wrapper (image + dots) ─────────────────── */
+#carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+#carousel-track {
+    position: relative;
+    width: 100%;
+    /* Height is driven by the image aspect ratio; set a fallback */
+    aspect-ratio: 4/3;
+    max-height: 800px;
+    background-color: rgba(0,0,0,0.6);
+    border: 2px solid teal;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* placeholder when no image is set */
+.carousel-slide .placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: teal;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+/* ── Dot indicators ──────────────────────────────────── */
+#dot-bar {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid teal;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dot.active {
+    background: teal;
+}
+
+/* ── Right panel ─────────────────────────────────────── */
+#desc-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 240px;
+    flex-shrink: 0;
+}
+
+#desc-box {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid teal;
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 180px;
+}
+
+#social-box {
+    background-color: rgba(0, 0, 139, 0.85); /* darkblue */
+    border: 2px solid teal;
+    border-radius: 8px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social-link {
+    display: block;
+    color: #67F0F0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.social-link:hover {
+    border-color: teal;
+    background: rgba(0,128,128,0.15);
+}
+
+/* ── Responsive collapse ─────────────────────────────── */
+@media (max-width: 780px) {
+    #reflections-layout {
+        flex-direction: column;
+    }
+
+    #desc-panel {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .carousel-arrow {
+        /* Put arrows in a row above/below on very small screens */
+    }
+}

@@ -25,27 +25,28 @@
             My main interest is in Embedded Security.<br>
             This is my personal portfolio website.<br>
         </p>
-        <button class="buttons">
-            <a href="https://github.com/stealinps" onclick="return window.confirm(`Create new tab?`)" style="color:teal" target="_blank" title="To my Github">
-                <img src="Pictures/github.png" alt="" style="height:10px;width:10px;">
-                Github
-            </a>
-            
-        </button>
-        <br>
-        <button class="buttons">
-            <a href="https://www.linkedin.com/in/stealinp/" onclick="return window.confirm(`Create new tab?`)" style="color:teal" target="_blank" title="To my LinkedIn">
-                <img src="Pictures/linkedin.png" alt="" style="height:10px;width:10px;">
-                LinkedIn
-            </a>
-            
-        </button>
+        <div id="social-box">
+                    <p style="color:teal;font-weight:bold;margin:0 0 10px 0;font-size:0.85rem;letter-spacing:1px;">FIND ME ON</p>
+                    <a href="https://github.com/stealinps" target="_blank" onclick="return window.confirm('Create new tab?')" class="social-link">
+                        <img src="Pictures/github.png" alt="" style="height:13px;width:13px;"> Github
+                    </a>
+                    <a href="https://www.linkedin.com/in/stealinp/" target="_blank" onclick="return window.confirm('Create new tab?')" class="social-link">
+                        <img src="Pictures/linkedin.png" alt="" style="height:13px;width:13px;"> LinkedIn
+                    </a>
+                    <a href="https://www.youtube.com/@stealnight-1" target="_blank" onclick="return window.confirm('Create new tab?')" class="social-link">
+                        ▶ YouTube
+                    </a>
+                </div>
     </header>
     <button id="toggle-btn" onclick="toggleHeader()">☰</button>
 
     
     <center style="padding-top: 50px; padding-bottom: 20px;">
-        
+        <button class="buttons">
+            <a href="reflections.html" style="color:#67F0F0" title="Reflections">
+                DSA Reflections
+            </a>
+        </button>
     </center>
 
 
@@ -65,16 +66,6 @@
             <button class="filter-btn" data-tag="Verilog">Verilog</button>
         </div>
 
-        <div class="project-card" data-tags="C++">
-            <h2>Contributions and Reflections for DSA</h2>
-            <div class="tags">
-                <span class="tag">C++</span>
-            </div>
-            <p>My Contributions and reflections for DSA class(Readme)</p>
-            <a href="https://github.com/stealinps/DSA-Contributions-and-Reflections/tree/main" target="_blank">View on GitHub →</a>
-            <button class="readme-btn" data-repo="stealinps/DSA-Contributions-and-Reflections">View More ▾</button>
-            <div class="readme-content" style="display:none;"></div>
-        </div>
 
         <div class="project-card" data-tags="C++,RayLib">
             <h2>AssignmentDSA</h2>
