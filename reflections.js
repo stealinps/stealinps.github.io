@@ -8,7 +8,7 @@ const slides = [
     {
         src: "DSA/1.png",          
         title: "My first contributions Intro to DSA",
-        desc: "This is the first contribution I ever made for my padlet. It consist of me sharing my Notes Github repository from my DSA class. All created using Neovim which I am proud of.?"
+        desc: "This is the first contribution I ever made for my padlet. It consist of me sharing my Notes Github repository from my DSA class. All created using Neovim which I am proud of."
     },
     {
         src: "DSA/2.png",
