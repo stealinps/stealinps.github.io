@@ -3,7 +3,7 @@ const slides = [
     {
         src: "DSA/pie.png",          
         title: "My learning preference",
-        desc: "My learning preference reflects my contributions in the padlet. As a kinesthetics learner I learn best from creating my own programs. Although I do share my notes, I quickly felt that sharing notes will not be effective like adding sands to the beach as everyone is already doing their own notes.My motto is \"to be good at something do it\"."
+        desc: "My learning preference reflects my contributions in the padlet. As a kinesthetics learner I learn best from creating my own programs. Although I do share my notes, I quickly felt that sharing notes will not be effective like adding sands to the beach as everyone is already doing their own notes.My motto is \"to be good at something is to do it\"."
     },
     {
         src: "DSA/1.png",          
