@@ -1,6 +1,16 @@
 
 const slides = [
     {
+        src: "DSA/BeforeAndNow.png",
+        title: "Comparison between me before DSA and after DSA",
+        desc: "Overall, my experience of the class has been excellent. I have grown a lot in the past 14 weeks. Both directly and indirectly. From learning about OOP and ADTs. To becoming more patience when programming. DSA as a whole really contributed to the development of my life. I m totally grateful toward Dr Fajar for allowing me to be a part of this wonderful class."
+    },
+    {
+        src: "DSA/github.png",          
+        title: "Challenges.",
+        desc: "The fact is I m not used to collaborating with others. Therefore me and the others overcome it by ultilizing proper software engineering practice like the use of git as version control and github to share and make sure our game codes is under control. Allowing for smooth interactions between team members. Which help and teaches me to stay consistent averaging 1.41 commits/day throughout the past 178days."
+    },
+    {
         src: "DSA/pie.png",          
         title: "My learning preference",
         desc: "My learning preference reflects my contributions in the padlet. As a kinesthetics learner I learn best from creating my own programs. Although I do share my notes, I quickly felt that sharing notes will be as effective as adding sands to the beach since everyone is already doing their own notes. My motto is \"to be good at something is to do it\"."
@@ -67,19 +77,11 @@ const slides = [
     },
     {
         src: "DSA/tui.png",          
-        title: "I am also a Terminal User Interface(TUI) and Open Source enthusiast",
-        desc: "As a TUI and FOSS person, I used tools like Neovim, Git and the terminal throughout the entire semester. Eventhough it is challenging at first, building the muscle memory in using these tools will greatly benefit me in the future especially as a computer engineering student. Because of these some people might notice that I tend to avoid using grandier software especially proprietary one"
+        title: "Benefit to future",
+        desc: "I learned a lot from inside and outside of the class. The environment of our class has been usefull in shaping my journey to become Firmware Embedded Security Engineer. From the skills I gained by collaborating with others to technical skills from the class. I am sure these will come in handy in my career sooner or later."
     },
-    {
-        src: "DSA/github.png",          
-        title: "I have made 252 github contributions within 178 days",
-        desc: "That is equal to 1.41 commits a day. Which is like making changes to my code everyday for the past 6 months. I hope I can stay as consistent within the later half of 2026."
-    },
-    {
-        src: "DSA/BeforeAndNow.png",
-        title: "Comparison between me before DSA and after DSA",
-        desc: "Overall, I have grown a lot in the past 14 weeks. Both directly and indirectly. From learning about OOP and ADTs. To becoming more patience when programming. DSA as a whole really contributed to the development of my life. I m totally grateful toward Dr Fajar for allowing me to be a part of this wonderful class."
-    },
+    
+    
 ];
 
 // ── Build DOM ─────────────────────────────────────────────────────
